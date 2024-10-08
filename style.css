@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Train+One&display=swap');
+@import url(mobile.css);
+@import url(tablet.css);
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+}
+.header .nav{
+    /* margin: 0; */
+    background: #398E8A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: .8rem; */
+}
+
+.header .nav .links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.header .nav .links a{
+    color: white;
+    text-decoration: none;
+}
+
+.header .nav .button{
+    border: 2px solid white;
+    padding: .5rem 1.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: .1rem;
+    cursor: pointer;
+}
+
+.header .nav .button img{
+    width: 20px;
+}
+
+.header .nav .button button{
+    background: none;
+     border: none;
+     color: white;
+     cursor: pointer;
+}
+
+.header .hero{
+    background: #074643;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding-top: 5rem; */
+    clip-path: circle(85.9% at 37% 1%);
+    height: 100vh;
+    /* width: 100vw; */
+}
+
+.header .hero .texts{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* .header .hero .texts .text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+} */
+
+.header .hero .texts .bold{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+}
+.bold #heading{
+    font-family: Train one;
+    font-size: 2rem;
+}
+.bold span{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.bold small{
+    font-weight: 100;
+    font-size: 1rem;
+}
+.header .hero .texts .buttons{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.hero .images{
+    position: relative;
+}
+.hero .images img{
+    width: 500px;
+    /* position: relative; */
+    /* z-index: 10000; */
+}
+.hero .images .texts{
+    background: white;
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 100px;
+    border-radius: 30px;
+    align-items: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 150px;
+    right: 26rem;
+    /* z-index: -1;/ */
+}
+.hero .images .texts span{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.hero .images .texts small{
+    font-weight: 800;
+    font-size: .7rem;
+    margin-top: -2rem;
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .header .nav{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .nav .links{
+        flex-direction: column;
+    }
+    .header .hero{
+        flex-direction: column;
+        clip-path: none;
+        padding: 2rem;
+    }
+    .header .hero .texts{
+        align-items: center;
+    }
+    .hero .images img{
+        width: 300px;
+    }
+    .hero .images .texts{
+        background: white;
+        width: 90px;
+        bottom: 2rem;
+        right: 12rem;
+    }
+}
+
+/* Tablet */
+@media only screen and(max-width: 768px){
+    
+}
+
+/* Large Screens */
+@media only screen and(max-width: 1200px){
+    
+}
+
