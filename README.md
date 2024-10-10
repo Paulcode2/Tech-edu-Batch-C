@@ -1,1 +1,1 @@
-New Readme
+This is a TechEdu CSS Project
